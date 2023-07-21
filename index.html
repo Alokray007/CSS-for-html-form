@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+    <form action="/handle-form" method="post">
+        <fieldset>
+            <legend class="user">Add User</legend>
+            <div class="group">
+
+            <div>
+                <label for="fname" >First Name: </label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter your First Name">
+            </div>
+            <div>
+                <label for="lname">Last Name:  </label><br>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last Name">
+            </div>
+            <div>
+                <label for="email">Email: </label><br>
+                <input type="email" name="email_address" id="email" placeholder="Enter your Email">
+            </div>
+            <div>
+                <label for="status">Status: </label><br>
+                <select name="role" id="status">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+            <div>
+                <p>Choose your favorite language: </p>
+
+                <!-- Providing same name to differnt radio button helps in selecting 1 buttoon at a time -->
+
+                <input type="radio" name="hcj" id="html">
+                <label for="html">HTML</label>
+                <input type="radio" name="hcj" id="css">
+                <label for="css">CSS</label>
+                <input type="radio" name="hcj" id="javascript">
+                <label for="javascript">JS</label>
+            </div>
+            <div>
+                <label for="comments">Comments: </label><br>
+                <textarea name="" id="comments">Comment here</textarea><br>
+                <label for="date">Current date: </label><br>
+                <input type="date" name="current_date" id="date">
+            </div>
+            <div>
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Sign up for newsletter</label><br>
+                <input type="checkbox" name="t&c" id="terms">
+                <label for="terms">Agree to T&C </label><br>
+                <input type="submit" value="Submit">
+            </div>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
